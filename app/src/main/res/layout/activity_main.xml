@@ -39,10 +39,18 @@
         android:layout_height="@dimen/home_person_editText_title_layoutHeight"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="16dp"
         android:ems="10"
         android:hint="@string/home_person_weight_editText_hint"
         android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textViewWeightRule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/red" />
 
     <TextView
         android:id="@+id/textViewHeight"
@@ -60,10 +68,18 @@
         android:layout_height="@dimen/home_person_editText_title_layoutHeight"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="16dp"
         android:ems="10"
         android:hint="@string/home_person_height_editText_hint"
         android:inputType="numberDecimal" />
+
+    <TextView
+    android:id="@+id/textViewHeightRule"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="16dp"
+    android:textColor="@color/red" />
 
     <Button
         android:id="@+id/buttonCalculate"
