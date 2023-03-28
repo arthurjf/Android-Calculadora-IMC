@@ -5,10 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    style="@style/Background">
 
     <TextView
         android:id="@+id/textViewAppName"
+        style="@style/Title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -26,6 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:text="@string/app_home_person_weight_editText_title"
         android:textSize="@dimen/home_person_editText_title_textSize"
         android:textStyle="bold" />
@@ -64,17 +67,21 @@
 
     <Button
         android:id="@+id/buttonCalculate"
+        style="@style/Button"
         android:layout_width="match_parent"
         android:layout_height="@dimen/home_person_button_layoutHeight"
         android:layout_margin="16dp"
         android:text="@string/home_button_calculate"
-        android:textSize="@dimen/home_person_button_textSize" />
+        android:textSize="@dimen/home_person_button_textSize"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/buttonClear"
+        style="@style/Button"
         android:layout_width="match_parent"
         android:layout_height="@dimen/home_person_button_layoutHeight"
         android:layout_margin="16dp"
         android:text="@string/home_button_clear"
-        android:textSize="@dimen/home_person_button_textSize" />
+        android:textSize="@dimen/home_person_button_textSize"
+        android:textStyle="bold" />
 </androidx.appcompat.widget.LinearLayoutCompat>
