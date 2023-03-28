@@ -39,7 +39,7 @@
         android:layout_marginBottom="16dp"
         android:ems="10"
         android:hint="@string/home_person_weight_editText_hint"
-        android:inputType="textPersonName" />
+        android:inputType="numberDecimal" />
 
     <TextView
         android:id="@+id/textViewHeight"
@@ -60,7 +60,7 @@
         android:layout_marginBottom="16dp"
         android:ems="10"
         android:hint="@string/home_person_height_editText_hint"
-        android:inputType="textPersonName" />
+        android:inputType="numberDecimal" />
 
     <Button
         android:id="@+id/buttonCalculate"
