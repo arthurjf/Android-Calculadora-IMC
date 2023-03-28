@@ -3,9 +3,14 @@
 
     <!-- Home Screen -->
     <string name="app_home_person_weight_editText_title">Peso (kg)</string>
+    <string name="app_home_person_weight_editText_title_error_value_empty">Insira seu peso</string>
+    <string name="app_home_person_weight_editText_title_error_value_notAccepted">Peso não permitido</string>
     <string name="home_person_weight_editText_hint">Ex: 60</string>
     <string name="home_person_height_editText_title">Altura (m)</string>
+    <string name="home_person_height_editText_error_value_empty">Insira sua altura</string>
+    <string name="home_person_height_editText_error_value_notAccepted">Altura não permitida</string>
     <string name="home_person_height_editText_hint">Ex: 1.72</string>
     <string name="home_button_calculate">Calcular</string>
+    <string name="home_button_calculate_unknown_error">Não foi possível calcular o seu IMC. Por favor, verifique os dados novamente</string>
     <string name="home_button_clear">Limpar</string>
 </resources>

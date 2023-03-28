@@ -24,39 +24,48 @@ class MainActivity : AppCompatActivity() {
         buttonCalculate.setOnClickListener {
             var isValuesOk = true
 
-            if (TextUtils.isEmpty(editTextWeight.text)) {
-                editTextWeight.error = "Insira o seu peso"
-                isValuesOk = false
-            }
-
-            if (TextUtils.isEmpty(editTextHeight.text)) {
-                editTextHeight.error = "Insira a sua altura"
-                isValuesOk = false
-            }
-
-            if (isValuesOk) {
-                val height = editTextHeight.text.toString().toDouble()
-                val weight = editTextWeight.text.toString().toDouble()
-
-                if (weight <= 0) {
-                    editTextWeight.error = "Peso não permitido"
+            try {
+                if (TextUtils.isEmpty(editTextWeight.text)) {
+                    editTextWeight.error =
+                        getString(R.string.app_home_person_weight_editText_title_error_value_empty)
                     isValuesOk = false
                 }
 
-                if (height <= 0) {
-                    editTextHeight.error = "Altura não permitida"
+                if (TextUtils.isEmpty(editTextHeight.text)) {
+                    editTextHeight.error =
+                        getString(R.string.home_person_height_editText_error_value_empty)
                     isValuesOk = false
                 }
 
                 if (isValuesOk) {
-                    val imc = weight / (height.pow(2))
+                    val height = editTextHeight.text.toString().toDouble()
+                    val weight = editTextWeight.text.toString().toDouble()
 
-                    val formattedResult = String.format(Locale.US, "%.1f", imc)
+                    if (weight <= 0) {
+                        editTextWeight.error =
+                            getString(R.string.app_home_person_weight_editText_title_error_value_notAccepted)
+                        isValuesOk = false
+                    }
 
-                    Toast.makeText(this, "Seu IMC: $formattedResult", Toast.LENGTH_LONG).show()
+                    if (height <= 0) {
+                        editTextHeight.error =
+                            getString(R.string.home_person_height_editText_error_value_notAccepted)
+                        isValuesOk = false
+                    }
+
+                    if (isValuesOk) {
+                        val imc = weight / (height.pow(2))
+
+                        val formattedResult = String.format(Locale.US, "%.1f", imc)
+
+                        Toast.makeText(this, "Seu IMC: $formattedResult", Toast.LENGTH_LONG).show()
+                    }
                 }
-            } else {
-                Toast.makeText(this, "Por favor, corrija os dados informados", Toast.LENGTH_SHORT)
+            } catch (e: Exception) {
+                Toast.makeText(
+                    this, getString(R.string.home_button_calculate_unknown_error),
+                    Toast.LENGTH_LONG
+                )
                     .show()
             }
         }
