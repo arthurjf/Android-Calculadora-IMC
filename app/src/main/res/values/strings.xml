@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Calculadora IMC</string>
+
+    <!-- Home Screen -->
+    <string name="app_home_person_weight_editText_title">Peso (kg)</string>
+    <string name="home_person_weight_editText_hint">Ex: 60</string>
+    <string name="home_person_height_editText_title">Altura (m)</string>
+    <string name="home_person_height_editText_hint">Ex: 1.72</string>
+    <string name="home_button_calculate">Calcular</string>
+    <string name="home_button_clear">Limpar</string>
 </resources>

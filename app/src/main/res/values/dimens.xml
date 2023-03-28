@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="home_person_editText_title_textSize">22sp</dimen>
+    <dimen name="home_person_editText_title_layoutHeight">60dp</dimen>
+    <dimen name="home_person_button_textSize">17sp</dimen>
+    <dimen name="home_person_button_layoutHeight">60dp</dimen>
+</resources>
