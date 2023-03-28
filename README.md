@@ -4,10 +4,10 @@ Aplicativo Android Nativo que calcula o IMC (Índice de Massa Corporal) do usuá
 
 ## Protótipos
 
-### Protótipo de Tela Principal
+### Protótipo da Tela Principal
 <img src=".project/Home.png" alt= Tela Principal height="500">
 
-### Protótipo de Tela de Resultado
+### Protótipo da Tela de Resultado
 <img src=".project/Resultado.png" alt= Tela Principal height="500">
 
 ## Requisitos e Regras
