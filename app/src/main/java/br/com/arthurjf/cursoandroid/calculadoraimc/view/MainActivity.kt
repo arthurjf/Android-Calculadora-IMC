@@ -7,6 +7,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import br.com.arthurjf.cursoandroid.calculadoraimc.R
+import br.com.arthurjf.cursoandroid.calculadoraimc.model.IMCModel
 import java.util.*
 import kotlin.math.pow
 
@@ -54,9 +55,9 @@ class MainActivity : AppCompatActivity() {
                     }
 
                     if (isValuesOk) {
-                        val imc = weight / (height.pow(2))
+                        val imc = IMCModel(weight, height)
 
-                        val formattedResult = String.format(Locale.US, "%.1f", imc)
+                        val formattedResult = String.format(Locale.US, "%.1f", imc.getIMC())
 
                         Toast.makeText(this, "Seu IMC: $formattedResult", Toast.LENGTH_LONG).show()
                     }
