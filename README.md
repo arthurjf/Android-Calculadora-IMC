@@ -1,12 +1,12 @@
 # CALCULADORA IMC - ANDROID NATIVO
 
-Aplicativo Android Nativo que calcula o IMC (Índice de Massa Corporal) do usuário
+Aplicativo Android Nativo que calcula o IMC (Índice de Massa Corporal) do usuário através de valores informados pelo mesmo, como o seu peso (em quilogramas) e altura (em metros).
 
 ## Demonstração(ões)
 
 ### Tela Principal
 
-Tela que o usuário insere os valores de peso e altura.
+Tela que o usuário insere os valores de peso (kg) e altura (m).
 
 <img src=".project/home_demo.jpg" alt= Tela Principal height="500">
 
