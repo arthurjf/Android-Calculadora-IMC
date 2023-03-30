@@ -42,5 +42,3 @@ Protótipo da tela de resultado, criada no Pencil
 - [Android Studio](https://developer.android.com/studio)
 - [Kotlin](https://kotlinlang.org/)
 - [Pencil](https://pencil.evolus.vn/)
-
-# 🔨 Em Desenvolvimento 🔨
