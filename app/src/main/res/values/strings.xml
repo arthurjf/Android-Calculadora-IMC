@@ -23,6 +23,8 @@
 
     <string name="result_button_back">Voltar</string>
     <string name="result_imc_title">IMC</string>
-    <string name="result_weight_editText_title">Seu Peso: </string>
-    <string name="result_height_editText_title">Sua Altura: </string>
+    <string name="result_weight_editText_title">Seu Peso:\u0020</string>
+    <string name="result_weight_editText_person">%.1f kg</string>
+    <string name="result_height_editText_title">Sua Altura:\u0020</string>
+    <string name="result_height_editText_person">%.1f m</string>
 </resources>

@@ -1,5 +1,9 @@
 package br.com.arthurjf.cursoandroid.calculadoraimc.model
 
-class Person(private var weight: Double, private var height: Double) {
+import kotlinx.parcelize.Parcelize
+import android.os.Parcelable
+
+@Parcelize
+class Person(var weight: Double, var height: Double): Parcelable {
 
 }

@@ -92,7 +92,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textViewHeighttPerson"
+            android:id="@+id/textViewHeightPerson"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1.72 m"
@@ -100,7 +100,7 @@
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <Button
-        android:id="@+id/buttonVoltar"
+        android:id="@+id/buttonReturn"
         style="@style/Button"
         android:layout_width="match_parent"
         android:layout_height="@dimen/home_person_button_layoutHeight"

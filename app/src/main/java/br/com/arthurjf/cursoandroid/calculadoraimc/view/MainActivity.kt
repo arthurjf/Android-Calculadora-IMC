@@ -1,5 +1,6 @@
 package br.com.arthurjf.cursoandroid.calculadoraimc.view
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
 import android.widget.Button
@@ -8,6 +9,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import br.com.arthurjf.cursoandroid.calculadoraimc.R
 import br.com.arthurjf.cursoandroid.calculadoraimc.model.IMCModel
+import br.com.arthurjf.cursoandroid.calculadoraimc.model.Person
 import java.util.*
 import kotlin.math.pow
 
@@ -55,9 +57,11 @@ class MainActivity : AppCompatActivity() {
                     }
 
                     if (isValuesOk) {
-                        val imc = IMCModel(this, weight, height)
-
-                        Toast.makeText(this, "Seu IMC: $imc\n${imc.getClassificationString()}", Toast.LENGTH_LONG).show()
+                        val person = Person(weight, height)
+                        
+                        val senderIntent = Intent(this, ResultActivity::class.java)
+                        senderIntent.putExtra(ResultActivity.PERSON_KEY_SENDER, person)
+                        startActivity(senderIntent)
                     }
                 }
             } catch (e: Exception) {
