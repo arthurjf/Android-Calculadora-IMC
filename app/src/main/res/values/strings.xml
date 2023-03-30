@@ -13,4 +13,11 @@
     <string name="home_button_calculate">Calcular</string>
     <string name="home_button_calculate_unknown_error">Não foi possível calcular o seu IMC. Por favor, verifique os dados novamente</string>
     <string name="home_button_clear">Limpar</string>
+
+    <string name="imc_underweight">Magreza</string>
+    <string name="imc_healthy">Saudável</string>
+    <string name="imc_overweight">Sobrepeso</string>
+    <string name="imc_obesity_class_i">Obesidade Grau I</string>
+    <string name="imc_obesity_class_ii">Obesidade Grau II</string>
+    <string name="imc_obesity_class_iii">Obesidade Grau III</string>
 </resources>

@@ -55,11 +55,9 @@ class MainActivity : AppCompatActivity() {
                     }
 
                     if (isValuesOk) {
-                        val imc = IMCModel(weight, height)
+                        val imc = IMCModel(this, weight, height)
 
-                        val formattedResult = String.format(Locale.US, "%.1f", imc.getIMC())
-
-                        Toast.makeText(this, "Seu IMC: $formattedResult", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this, "Seu IMC: $imc\n${imc.getClassificationString()}", Toast.LENGTH_LONG).show()
                     }
                 }
             } catch (e: Exception) {
