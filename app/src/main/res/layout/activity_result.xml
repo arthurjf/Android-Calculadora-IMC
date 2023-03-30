@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.ResultActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/result_imc_title"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <View
+        android:id="@+id/viewLineDividerUpper"
+        style="@style/LineDivider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="16dp" />
+
+    <TextView
+        android:id="@+id/textViewIMC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="0.0"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewIMCClassification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Classificação"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/viewLineDividerBottom"
+        style="@style/LineDivider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="16dp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/textViewWeightTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/result_weight_editText_title"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewWeightPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60 kg"
+            android:textSize="18sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/textViewHeighttTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/result_height_editText_title"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewHeighttPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.72 m"
+            android:textSize="18sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <Button
+        android:id="@+id/buttonVoltar"
+        style="@style/Button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_person_button_layoutHeight"
+        android:layout_margin="16dp"
+        android:text="@string/result_button_back"
+        android:textSize="@dimen/home_person_button_textSize"
+        android:textStyle="bold" />
+</androidx.appcompat.widget.LinearLayoutCompat>

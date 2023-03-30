@@ -20,4 +20,9 @@
     <string name="imc_obesity_class_i">Obesidade Grau I</string>
     <string name="imc_obesity_class_ii">Obesidade Grau II</string>
     <string name="imc_obesity_class_iii">Obesidade Grau III</string>
+
+    <string name="result_button_back">Voltar</string>
+    <string name="result_imc_title">IMC</string>
+    <string name="result_weight_editText_title">Seu Peso: </string>
+    <string name="result_height_editText_title">Sua Altura: </string>
 </resources>

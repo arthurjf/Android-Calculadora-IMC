@@ -26,4 +26,8 @@
     <style name="Background">
         <item name="android:background">@color/dark_cyan</item>
     </style>
+
+    <style name="LineDivider">
+        <item name="android:background">@color/white</item>
+    </style>
 </resources>
