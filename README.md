@@ -12,7 +12,7 @@ Tela que o usuário insere os valores de peso (kg) e altura (m).
 
 ### Tela Resultado
 
-Tela que mostra o IMC, classificação e e os valores inseridos anteriormente pelo usuário.
+Tela que mostra o IMC, classificação e os valores inseridos anteriormente pelo usuário.
 
 <img src=".project/result_demo.jpg" alt= Tela Principal height="500">
 
